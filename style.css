@@ -1,9 +1,9 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #f9f9f9;
-    color: #222;
+    background: #0f172a;   /* koyu lacivert */
+    color: #e2e8f0;        /* soft açık gri */
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .container {
@@ -15,10 +15,11 @@ body {
 h1 {
     margin-bottom: 8px;
     font-size: 32px;
+    color: #ffffff;
 }
 
 .title {
-    color: #555;
+    color: #94a3b8;
     font-size: 16px;
     margin-top: 0;
 }
@@ -26,30 +27,39 @@ h1 {
 h2 {
     margin-top: 60px;
     font-size: 22px;
+    color: #f1f5f9;
+    border-bottom: 1px solid #1e293b;
+    padding-bottom: 8px;
 }
 
 h3 {
     margin-bottom: 6px;
     font-size: 18px;
+    color: #ffffff;
 }
 
 .project {
-    background: white;
+    background: #1e293b;
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #334155;
+    transition: 0.2s ease;
+}
+
+.project:hover {
+    border-color: #3b82f6;
 }
 
 .tech {
-    color: #444;
+    color: #94a3b8;
     font-size: 14px;
 }
 
 hr {
     margin: 50px 0;
     border: none;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #1e293b;
 }
 
 .cv-buttons {
@@ -59,41 +69,43 @@ hr {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background: #111;
+    background: #3b82f6;
     color: white;
     text-decoration: none;
     margin-right: 10px;
     border-radius: 4px;
     font-size: 14px;
+    transition: 0.2s;
 }
 
 .btn:hover {
-    background: #333;
+    background: #2563eb;
 }
 
 .btn-outline {
     display: inline-block;
     padding: 10px 20px;
-    border: 1px solid #111;
-    color: #111;
+    border: 1px solid #3b82f6;
+    color: #3b82f6;
     text-decoration: none;
     border-radius: 4px;
     font-size: 14px;
+    transition: 0.2s;
 }
 
 .btn-outline:hover {
-    background: #111;
+    background: #3b82f6;
     color: white;
 }
 
 footer {
     text-align: center;
     font-size: 14px;
-    color: #555;
+    color: #94a3b8;
 }
 
 footer a {
-    color: #111;
+    color: #60a5fa;
     text-decoration: none;
 }
 
@@ -104,7 +116,7 @@ footer a:hover {
 .note {
     font-size: 12px;
     margin-top: 10px;
-    color: #777;
+    color: #64748b;
 }
 
 /* Mobile optimization */
