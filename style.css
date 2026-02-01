@@ -166,3 +166,19 @@ footer a:hover {
     }
 
 }
+.publication-link {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 12px;
+    border: 1px solid #2f80ed;
+    border-radius: 4px;
+    color: #2f80ed;
+    text-decoration: none;
+    margin-left: 8px;
+    transition: all 0.2s ease;
+}
+
+.publication-link:hover {
+    background-color: #2f80ed;
+    color: white;
+}
