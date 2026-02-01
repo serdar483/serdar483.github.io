@@ -1,111 +1,137 @@
+/* ===== Base ===== */
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #0f172a;   /* koyu lacivert */
-    color: #e2e8f0;        /* soft açık gri */
     margin: 0;
-    line-height: 1.7;
+    padding: 0;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    background-color: #111418;        /* Soft dark grey */
+    color: #e6e6e6;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
 }
+
+/* ===== Layout ===== */
 
 .container {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 0 20px;
+    max-width: 880px;
+    margin: 80px auto;
+    padding: 0 24px;
 }
 
+/* ===== Typography ===== */
+
 h1 {
-    margin-bottom: 8px;
-    font-size: 32px;
-    color: #ffffff;
+    font-size: 34px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
 }
 
 .title {
-    color: #94a3b8;
-    font-size: 16px;
-    margin-top: 0;
+    font-size: 15px;
+    color: #9aa4af;
+    margin-bottom: 24px;
 }
 
 h2 {
-    margin-top: 60px;
-    font-size: 22px;
-    color: #f1f5f9;
-    border-bottom: 1px solid #1e293b;
-    padding-bottom: 8px;
-}
-
-h3 {
-    margin-bottom: 6px;
-    font-size: 18px;
+    font-size: 20px;
+    margin-top: 70px;
+    margin-bottom: 18px;
+    font-weight: 500;
     color: #ffffff;
 }
 
-.project {
-    background: #1e293b;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    border: 1px solid #334155;
-    transition: 0.2s ease;
+h3 {
+    font-size: 17px;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #ffffff;
 }
 
-.project:hover {
-    border-color: #3b82f6;
+p {
+    margin: 8px 0 14px 0;
+    font-size: 15px;
+    color: #cfcfcf;
 }
 
-.tech {
-    color: #94a3b8;
-    font-size: 14px;
-}
+/* ===== Divider ===== */
 
 hr {
-    margin: 50px 0;
     border: none;
-    border-top: 1px solid #1e293b;
+    border-top: 1px solid #222831;
+    margin: 40px 0;
 }
 
+/* ===== CV Buttons ===== */
+
 .cv-buttons {
-    margin-top: 20px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.btn,
+.btn-outline {
+    display: inline-block;
+    padding: 9px 18px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.2s ease;
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #3b82f6;
+    background-color: #2f80ed;
     color: white;
-    text-decoration: none;
-    margin-right: 10px;
-    border-radius: 4px;
-    font-size: 14px;
-    transition: 0.2s;
 }
 
 .btn:hover {
-    background: #2563eb;
+    background-color: #1f6fe0;
 }
 
 .btn-outline {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid #3b82f6;
-    color: #3b82f6;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 14px;
-    transition: 0.2s;
+    border: 1px solid #2f80ed;
+    color: #2f80ed;
 }
 
 .btn-outline:hover {
-    background: #3b82f6;
+    background-color: #2f80ed;
     color: white;
 }
 
+/* ===== Project Cards ===== */
+
+.project {
+    background-color: #171b21;
+    border: 1px solid #222831;
+    padding: 20px 22px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: border 0.2s ease, transform 0.2s ease;
+}
+
+.project:hover {
+    border-color: #2f80ed;
+    transform: translateY(-2px);
+}
+
+.tech {
+    font-size: 13px;
+    color: #8da2b8;
+    margin-bottom: 8px;
+}
+
+/* ===== Footer ===== */
+
 footer {
+    margin-top: 40px;
+    padding-top: 10px;
     text-align: center;
-    font-size: 14px;
-    color: #94a3b8;
+    font-size: 13px;
+    color: #9aa4af;
 }
 
 footer a {
-    color: #60a5fa;
+    color: #2f80ed;
     text-decoration: none;
 }
 
@@ -116,16 +142,27 @@ footer a:hover {
 .note {
     font-size: 12px;
     margin-top: 10px;
-    color: #64748b;
+    color: #6c757d;
 }
 
-/* Mobile optimization */
-@media (max-width: 600px) {
+/* ===== Responsive ===== */
+
+@media (max-width: 768px) {
+
     .container {
-        margin: 30px auto;
+        margin: 50px auto;
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 26px;
     }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
 }
